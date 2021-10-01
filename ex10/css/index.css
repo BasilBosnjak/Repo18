@@ -1,76 +1,133 @@
+* {
+    padding: 0;;
+    margin: 0;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    font-size: 15px;
-    line-height: 20px;
-}
-
-#navbar header {
-    padding: 10px 10px 10px 10px;
-    font-size: 25px;
-    text-align: center;
-    margin: 0;
-}
-
-header {
-    padding: 15px 10px 15px 10px;
-    font-size: 22.5px;
-    font-weight: bold;
-    text-align: left;
-}
-
-#navbar {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    width: 275px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-right: 3px solid #000000;
 }
 
-#navbar .nav-links {
-    padding: 7.5px 0px 7.5px 0px;
-}
 
-#navbar ul {
-    padding: 0;
-    margin: 0;
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
-
-#navbar li {
-    min-height: 25px;
-    border-top: 1px solid #000000;
-    font-size: 12.5px;
+#showcase {
+    background: url(../img/gigi-logo.png);
+    filter: grayscale(100%);
+    background-size: cover;
+    height: 100vh;
 }
-
-#navbar li a {
-    padding-left: 25px;
+header {
+    background-color: rgb(37, 39, 44);
+    color: white;
+    border-bottom: 2px solid orangered;
+    height: 20vh;
 }
-
-li strong {
-    font-weight: normal;
-    font-size: 17.5px;
+ul {
+    list-style-type: none;
+    margin-right: 100px;
 }
-
-#navbar a {
+li {
+    float: left;
+    margin: 20px;
+}
+li a {
+    color: white;
     text-decoration: none;
-    color: #000000;
+}
+li a:hover {
+    color: orangered;
+}
+#highlight,
+.current a {
+    color: orangered;
+}
+.current a:hover {
+    color: white;
+}
+#branding {
+    margin-left: 100px;
+    font-size: 25px;
 }
 
-#navbar img {
-    width: 100%;
+
+#showcase div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
 }
 
-#main-doc {
-    margin-left: 300px;
+#showcase {
+    color: white;
+    text-align: center;
+}
+#showcase h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#showcase p {
+    width: 80%;
 }
 
-p {
-    margin: 20px 10px;
+#newsletter {
+    background-color: rgb(37, 39, 44);
+    color: white;
+    height: 20vh;
 }
 
-code {
-    display: block;
-    padding: 20px;
-    background-color: #eeeeee;
+#newsletter .container h1 {
+    margin-left: 100px;
+}
+
+form {
+    margin-right: 100px;
+    
+}
+input {
+    height: 22px;
+    width: 150px;
+}
+button {
+    width: 75px;
+    height: 27px;
+    color: white;
+    background-color: orangered;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    margin: 30px;
+}
+#boxes {
+    display: flex;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+}
+.box img {
+    width: 30%;
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+footer {
+    background-color: orangered;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
